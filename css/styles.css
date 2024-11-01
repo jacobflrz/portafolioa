@@ -11130,5 +11130,5 @@ footer.footer .social-link {
 .media-container {
   display: flex;
   align-items: center;
-  gap: 20px; /* Puedes ajustar este valor para cambiar el espacio entre el video y la imagen */
+  gap: 25px; /* Puedes ajustar este valor para cambiar el espacio entre el video y la imagen */
 }
