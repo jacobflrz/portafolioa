@@ -11127,3 +11127,8 @@ footer.footer .social-link {
   border: 2px solid #fff; /* Opcional: borde blanco alrededor de la imagen */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional para darle profundidad */
 }
+.media-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Puedes ajustar este valor para cambiar el espacio entre el video y la imagen */
+}
