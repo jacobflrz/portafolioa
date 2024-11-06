@@ -150,7 +150,18 @@
                             <img class="img-fluid" src="assets/img/BTTT.png" alt="..." />
                         </a>
                 </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#brazo">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h3">PROYECTOS DE INGENIERIA</div>
+                            </div>   
+                        </div>
+                        <img class="img-fluid" src="assets/img/brazorob.jpg" alt="..." />
+                    </a>
+                </div>
             </div>
+            
         </section>
         <!-- Call to Action-->
         <section class="content-section bg-primary text-white">
@@ -221,7 +232,9 @@
                                 Tu navegador no soporta el elemento de video.
                             </video>
                             <img src="assets/img/tink555.jpg" alt="Descripción de la imagen" width="400" height="350" style="border: none;">
-                        </div>
+            
+                         </div>
+                         <br>
                         <h5>CONSTRUCCIÓN</h1>
                         <p>En la fase final, implementamos físicamente el circuito. Guiados por las simulaciones previas, ensamblamos los componentes en el protoboard. Durante este proceso, encontramos algunos desafíos prácticos: Detectamos fallas en ciertos puntos de conexión del 
                             protoboard que causaban irregularidades en el parpadeo del LED. Solucionamos estos problemas aplicando más presión en los puntos críticos y, en algunos casos, reemplazando componentes desgastados. Aseguramos que todos los componentes estuvieran bien colocados
@@ -277,7 +290,25 @@
                                    
                                     <a href="https://sebastian-solorzano.github.io/index/" target="_blank" style="font-size: 20px; display: block; margin-bottom: 10px;" >Pagina Sebas</a>
                                    <a href="https://jacobflrz.github.io/miki-2/" target="_blank" style="font-size: 20px; display: block;" >Pagina Jacobo </a>
-
+                                   <br>
+                                   <h5>VISUALIZACIÓN:</h5>
+                                   <p>No fue necesaria una simulación, ya que el desarrollo se realizó directamente en el editor de texto y se visualizó en el navegador en tiempo real.</p>
+                               
+                                   <h5>CONSTRUCCIÓN:</h5>
+                                   <p>La página se construyó escribiendo el código HTML en el editor de texto, usando las siguientes etiquetas principales:</p>
+                                   <ul>
+                                       <li><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code> para los títulos</li>
+                                       <li><code>&lt;p&gt;</code> para el texto</li>
+                                       <li><code>&lt;img&gt;</code> para la imagen</li>
+                                       <li><code>&lt;a&gt;</code> para crear el enlace a la segunda página</li>
+                                   </ul>
+                               
+                                   <h5>RESULTADOS:</h5>
+                                   <p>Se logró crear con éxito una página web simple. La página principal, "index.html", contiene títulos, texto e imagen y está enlazada a una página secundaria, "pagina2.html". Ambas páginas se visualizan correctamente en el navegador y se cargaron exitosamente en GitHub Pages, estando accesibles en línea.</p>
+                               
+                                   <h5>CONCLUSIONES:</h5>
+                                   <p>Esta práctica proporcionó una introducción práctica a los conceptos básicos del desarrollo web. Se aprendió sobre la estructura fundamental de un documento HTML, cómo agregar elementos a una página web y cómo crear enlaces entre páginas.</p>
+                               
                             </div>
                             <div class="media-container">
                                 <img src="assets/img/pagina_jacobo.png" alt="Descripción de la imagen" style="width: 45%; height: auto; border: none;">
@@ -292,23 +323,128 @@
                                 <h2 class="mb-5">Arduino 1 / 2 / 3</h2>
 
                                 
-                                <h1>Práctica 0: Arduino Básico, Salidas Digitales</h1>
+                                <h1 style="text-align: center;">Práctica 0: Arduino Básico, Salidas Digitales</h1>
+
                                 
                                 <br></div>
-                                <h5>RESUMEN:</h1>
-                                <p>
-                                    Las salidas digitales permiten enviar señales a un circuito de control para la 
-                                    diagnosticación de una función que el usuario desee. En la primera práctica aprendimos 
-                                    a programar con Arduino y crear modelos simulados, utilizando las funciones básicas. 
-                                    Generamos diferentes circuitos, utilizando las salidas digitales para encender diodos 
-                                    y apagarlos en un determinado momento. Además, utilizamos dichas salidas para controlar 
-                                    un display que muestre un función <em>loop</em> de un contador del 0 al 2.
-                                </p>
-                                <div class="container">
-                                    <img src="/assets/img/practica_1_1.png" alt="Blink" class="image">
+                                <h5>Resumen de la Práctica</h5>
+                                <p>Esta práctica se enfocó en el uso de la placa Arduino UNO para explorar el control de salidas digitales. A través de 9 ejercicios, se cubrieron conceptos desde lo básico hasta aplicaciones complejas, permitiendo aprender a controlar diversos componentes mediante programación.</p>
+                            
+                                <h5>INTRODUCCIÓN:</h5>
+                                <p>Las salidas digitales son clave en la electrónica y programación de microcontroladores, ya que permiten controlar dispositivos externos como LEDs o motores mediante señales de encendido/apagado. Usamos el Arduino UNO para experimentar con salidas digitales en distintos contextos.</p>
+                            
+                                <h5>MATERIALES:</h5>
+                                <ul>
+                                    <li>Placa Arduino UNO</li>
+                                    <li>Cable USB</li>
+                                    <li>Protoboard</li>
+                                    <li>LEDs</li>
+                                    <li>Resistencias de 220Ω</li>
+                                    <li>Cables de conexión</li>
+                                    <li>Display de 7 segmentos</li>
+                                </ul>
+                            
+                                <h5>DESARROLLO:</h5>
+                                <p>Para cada ejercicio, realizamos simulaciones en Tinkercad y pruebas físicas.</p>
+                            
+                                <ol>
+                                    <li><strong>Ejemplo Blink:</strong> Hacer parpadear el LED integrado en la placa Arduino.</li>
+                                    <li><strong>Salida Digital HIGH:</strong> Mantener una salida digital en estado alto (HIGH).</li>
+                                    <li><strong>Salida Digital LOW:</strong> Mantener una salida digital en estado bajo (LOW).</li>
+                                    <li><strong>Salida Digital Delay:</strong> Usar retardos controlados entre cambios de estado en una salida digital.</li>
+                                    <li><strong>Salida Digital LED:</strong> Controlar un LED externo conectado a una salida digital.</li>
+                                    <li><strong>Salida Digital Protoboard:</strong> Implementar circuitos más complejos usando una protoboard.</li>
+                                    <li><strong>Salida Digital LEDs I:</strong> Controlar múltiples LEDs de forma secuencial.</li>
+                                    <li><strong>Salida Digital LEDs II:</strong> Crear patrones de iluminación más complejos con varios LEDs.</li>
+                                    <li><strong>Salida Digital Display 7 Segmentos:</strong> Controlar un display de 7 segmentos para mostrar números o caracteres.</li>
+                                    <li><strong>Contador Digital Display 7 Segmentos:</strong> Controlar el display de 7 segmentos para repetir una cuenta ascendente del 0 al 2.</li>
+                                </ol>
+                            
+                                <h5>CONSTRUCCIÓN:</h5>
+                                <ol>
+                                    <li>Reunimos los componentes necesarios.</li>
+                                    <li>Montamos el circuito en una protoboard, conectando cada componente.</li>
+                                    <li>Cargamos el código en la placa Arduino UNO.</li>
+                                    <li>Probamos para verificar que la simulación y la construcción física coincidían.</li>
+                                    <li>Realizamos ajustes, revisando conexiones o componentes si era necesario.</li>
+                                </ol>
+                            
+                                <h5>RESULTADOS:</h5>
+                                <p>A lo largo de los 9 ejercicios, logramos progresar desde el control básico de un solo LED hasta la manipulación de displays de 7 segmentos, demostrando la versatilidad de las salidas digitales del Arduino UNO. Cada ejercicio sumó conocimientos para controlar eficazmente las salidas digitales.</p>
+                            
+                                <h5>CONCLUSIONES:</h5>
+                                <p>Esta práctica demostró la flexibilidad del Arduino UNO para controlar distintos componentes electrónicos a través de salidas digitales. Todos los ejercicios se realizaron de forma progresiva, permitiendo abordar diseños más complejos tanto en el circuito como en la programación.</p>
+                            
+                                <h1 style="text-align: center;">Práctica 1: Arduino, Salidas Digitales</h1>
 
-                                    
-            
+
+                                <h5>Resumen de la Práctica</h5>
+                                <p>Esta práctica explora el uso de entradas digitales en el Arduino UNO, utilizando botones para controlar LEDs y crear sistemas interactivos simples. Se realizaron diferentes configuraciones para entender el control de entradas y salidas digitales en un microcontrolador.</p>
+                            
+                                <h5>INTRODUCCIÓN:</h5>
+                                <p>El manejo de entradas digitales es fundamental en la programación de microcontroladores, permitiendo que el Arduino UNO interprete señales y controle componentes electrónicos. Esta práctica profundiza en cómo el Arduino gestiona entradas digitales para controlar salidas.</p>
+                            
+                                <h5>MATERIALES:</h5>
+                                <ul>
+                                    <li>Placa Arduino UNO</li>
+                                    <li>Cable USB</li>
+                                    <li>Protoboard</li>
+                                    <li>Push button (2 unidades)</li>
+                                    <li>Resistencias de 220Ω (4 unidades)</li>
+                                    <li>Resistencias de 1kΩ (2 unidades)</li>
+                                    <li>LEDs (4 unidades)</li>
+                                    <li>Cables de conexión</li>
+                                </ul>
+                            
+                                <h5>DESARROLLO:</h5>
+                                <p>A continuación, se detallan los ejercicios realizados en esta práctica.</p>
+                            
+                                <ol>
+                                    <li><strong>Ejercicio 1: Entrada digital botón</strong> - Control de un LED con un botón.</li>
+                                    <!-- Espacio para imagen -->
+                                    <p><img src="ruta_de_imagen_1.jpg" alt="Imagen Ejercicio 1" style="width:100%; max-width:600px;"></p>
+                            
+                                    <li><strong>Ejercicio 2: Entrada digital 2 botones</strong> - Control de dos LEDs independientes usando dos botones.</li>
+                                    <!-- Espacio para imagen -->
+                                    <p><img src="ruta_de_imagen_2.jpg" alt="Imagen Ejercicio 2" style="width:100%; max-width:600px;"></p>
+                            
+                                    <li><strong>Ejercicio 3: Entrada digital condicionales botón</strong> - Control condicional de un LED basado en el estado de un botón.</li>
+                                    <!-- Espacio para imagen -->
+                                    <p><img src="ruta_de_imagen_3.jpg" alt="Imagen Ejercicio 3" style="width:100%; max-width:600px;"></p>
+                            
+                                    <li><strong>Ejercicio 4: Entrada digital condicionales 2 botones</strong> - Control condicional de dos LEDs utilizando dos botones independientes.</li>
+                                    <!-- Espacio para imagen -->
+                                    <p><img src="ruta_de_imagen_4.jpg" alt="Imagen Ejercicio 4" style="width:100%; max-width:600px;"></p>
+                            
+                                    <li><strong>Ejercicio 5: Contador LEDs</strong> - Crear un contador visual con LEDs, incrementando el conteo con un botón.</li>
+                                    <!-- Espacio para imagen -->
+                                    <p><img src="ruta_de_imagen_5.jpg" alt="Imagen Ejercicio 5" style="width:100%; max-width:600px;"></p>
+                            
+                                    <li><strong>Ejercicio 6: Condicionales OR botón</strong> - Control de un LED usando dos botones en condición OR.</li>
+                                    <!-- Espacio para imagen -->
+                                    <p><img src="ruta_de_imagen_6.jpg" alt="Imagen Ejercicio 6" style="width:100%; max-width:600px;"></p>
+                            
+                                    <li><strong>Ejercicio 7: Condicionales AND botones</strong> - Activación de un LED solo cuando ambos botones están presionados simultáneamente.</li>
+                                    <!-- Espacio para imagen -->
+                                    <p><img src="ruta_de_imagen_7.jpg" alt="Imagen Ejercicio 7" style="width:100%; max-width:600px;"></p>
+                                </ol>
+                            
+                                <h5>CONSTRUCCIÓN:</h5>
+                                <ol>
+                                    <li>Recopilación de componentes físicos según el diseño de cada circuito.</li>
+                                    <li>Montaje de los circuitos en una protoboard, basados en los diseños simulados en Tinkercad.</li>
+                                    <li>Conexión precisa de los componentes para asegurar coincidencia con el diseño virtual.</li>
+                                    <li>Carga del código Arduino en la placa.</li>
+                                    <li>Prueba inicial del circuito para confirmar su funcionamiento y realizar ajustes de ser necesario.</li>
+                                </ol>
+                            
+                                <h5>RESULTADOS:</h5>
+                                <p>Los resultados obtenidos en la construcción física de los circuitos coincidieron con las simulaciones en Tinkercad, confirmando el correcto funcionamiento de cada configuración de entradas y salidas.</p>
+                            
+                                <h5>CONCLUSIONES:</h5>
+                                <p>Esta práctica demostró la versatilidad del Arduino UNO para gestionar entradas digitales, desde controles básicos de un botón hasta lógicas complejas con múltiples entradas. Esta exploración mejoró nuestra comprensión de la programación de microcontroladores y sus aplicaciones en sistemas electrónicos básicos.</p>
+                            
+
                             </div>
                             </div>
               <section class="content-section" id="brazo">
