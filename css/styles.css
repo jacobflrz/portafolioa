@@ -11129,6 +11129,44 @@ footer.footer .social-link {
 }
 .media-container {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 25px; /* Puedes ajustar este valor para cambiar el espacio entre el video y la imagen */
+}
+/* Contenedor principal */
+.download-container {
+  display: flex; /* Alinea los enlaces en fila o columna */
+  justify-content: center; /* Centra horizontalmente */
+  gap: 15px; /* Espacio entre botones */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Botones de descarga */
+.download-btn {
+  display: inline-block; /* Hace que el enlace actúe como un botón */
+  padding: 10px 20px; /* Espaciado interno */
+  color: #fff; /* Color del texto */
+  background-color: #007bff; /* Color de fondo (azul) */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  text-decoration: none; /* Elimina el subrayado */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita para el texto */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Efectos suaves */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  text-align: center; /* Centra el texto */
+}
+
+/* Efecto al pasar el mouse */
+.download-btn:hover {
+  background-color: #0056b3; /* Oscurece el color de fondo */
+  transform: translateY(-2px); /* Eleva el botón ligeramente */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Intensifica la sombra */
+}
+
+/* Estilo activo al hacer clic */
+.download-btn:active {
+  background-color: #003f7f; /* Fondo aún más oscuro */
+  transform: translateY(0); /* El botón regresa a su posición original */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduce la sombra */
 }
